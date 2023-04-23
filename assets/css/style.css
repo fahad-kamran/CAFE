@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    --color-primary: rgb(229, 56, 56);
+    --color-primary-hover:rgb(229,77,77);
+    --transition:.3s all ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.rotate_90{
+    transform: rotate(90deg);
+}
+.all_unset{
+    all: unset;
+}
+.flex_1_1_0{
+    flex:1 1 0%;
+}
+.flex_2_1_0{
+    flex:2 1 0%;
+}
+/* primary button */
+.btn_primary {
+    all: unset;
+    width: 80%;
+    background-color: var(--color-primary);
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: auto;
+    transition: var(--transition);
+}
+.btn_primary:hover{
+    background-color: var(--color-primary-hover);
+}
+.btn_outlined_primary{
+    all: unset;
+    width: 80%;
+    border: 1px solid var(--color-primary);
+    display: block;
+    padding: 10px;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: auto;
+    transition: var(--transition);
+}
+.btn_outlined_primary:hover{
+    background-color: rgba(229, 56, 56, 0.1);
+}
+/* primary button */
+/* Font Size */
+.fs_14{
+    font-size:14px;
+}
+.fs_18 {
+    font-size: 18px;
+}
+.fs_20{
+    font-size: 20px;
+}
+.fs_24{
+    font-size: 24px;
+}
+/* Font Size */
+
+.bg_primary {
+    background-color: var(--color-primary);
+}
+
+.text_primary {
+    color: var(--color-primary);
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 130px;
+    height: auto;
+}
+
+.left_bar {
+    min-height: 100vh;
+    height: auto;
+}
+.left_bar .back_navigation{
+    width: 40px;
+    height: 40px;
+    color: #000;
+}
+.left_bar .header{
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+}
+.left_bar .langaue_modal_btn{
+    all: unset;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.language_list{
+    all: unset;
+    display: block;
+    padding: 10px 0px;    
+    width: 100%;
+    font-size: 18px;
+}
+.language_list:not(:last-child){
+    border-bottom: 1px solid #dee2e6;
+}
+.left_bar .footer{
+    max-width: 340px;
+    margin: auto;
+}
+.left_bar .footer .social_icon_container{
+    display: flex;
+    justify-content: space-around;
+}
+.left_bar .social_icon_container .icon{
+    width:40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+.left_bar .social_icon_container .icon:hover{
+    background-color: rgba(229, 56, 56, 0.1);
+}
+.desktop_content {
+    min-height: 100vh;
+}
+
+.desktop_content>.main {
+    max-width: 400px;
+    width: 100%;
+}
+
+.primary_divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+.deliver_modal .btn_primary, .deliver_modal .btn_outlined_primary{
+    width: 100%;
+    text-align: center;
+}
+
+/* order status Page */
+.order_status .search_order input{
+    all: unset;
+}
+.order_status .call_restaurant{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - 100px);
+}
+/* order status Page */
+
+/* feedback page */
+.feedback_page .bottom_fixed{
+    all: unset;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: var(--color-primary);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+.feedback_page .star_container{
+    color: rgba(229, 56, 56, 0.2);
+}
+.feedback_page .star_container:hover{
+    color: var(--color-primary);
+}
+.feedback_page .star_container:not(:last-child){
+    margin-right: 10PX;
+}
+
+/* Media Query */
+@media(max-width:991px) {
+    .desktop_content {
+        display: none;
+    }
+    .left_bar{
+        border: 0px !important;
+    }
+}
+
+/* Media Query */

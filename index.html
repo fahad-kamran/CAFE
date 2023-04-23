@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE :: HOME</title>
+    <!-- fontawesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- customs / global css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="home" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar">
+                    <div class="border-bottom">
+                        <div class="header py-5 text-center">
+                            <img src="./assets/images/logo.avif" alt="logo" class="logo mb-3">
+                            <p class="fs_18">Stay Safe</p>
+                            <button class="langaue_modal_btn mb-3" data-bs-toggle="modal"
+                                data-bs-target="#language_modal"><i class="fa-solid fa-globe"></i> <span
+                                    class="language_name text-decoration-underline mx-1">English</span> <i
+                                    class="fa-solid fa-angle-right rotate_90"></i></button>
+                            <button class="btn_primary mb-3" data-bs-toggle="modal"
+                                data-bs-target="#deliver_modal">Delivery</button>
+                            <button class="btn_primary">Pick Up</button>
+                        </div>
+                    </div>
+                    <div class="listing">
+                        <a href="./order-status.html" class="border-bottom d-block text-dark">
+                            <div class="py-3 d-flex justify-content-between align-items-center">
+                                <span class="fs_18"><i class="fa-solid fa-location-dot me-2 fs_18"></i> Order
+                                    Status</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <a href="./feedback.html" class="border-bottom d-block text-dark">
+                            <div class="py-3 d-flex justify-content-between align-items-center">
+                                <span class="fs_18"><i class="fa-solid fa-message me-2 fs_18"></i> Give Feedback</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#info_modal"
+                            class="border-bottom d-block text-dark">
+                            <div class="py-3 d-flex justify-content-between align-items-center">
+                                <span class="fs_18"><i class="fa-solid fa-circle-info me-2 fs_18"></i> Info</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer py-4">
+                        <div class="social_icon_container">
+                            <a class="icon" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="icon" href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a class="icon" href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="icon" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="icon" href="#">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
+                    <div class="text-center main">
+                        <img src="./assets/images/logo.avif" alt="logo" class="logo mb-3">
+                        <div class="primary_divider mb-3"></div>
+                        <h3>Name Cafe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- deliver_modal -->
+    <div class="modal fade deliver_modal" id="deliver_modal" tabindex="-1" aria-labelledby="deliver_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between border-bottom-0">
+                    <span></span>
+                    <h1 class="modal-title fs_18" id="deliver_modalLabel">Select your delivery address</h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group mb-2">
+                            <label class="form-label">Delivery Address</label>
+                            <input type="text" placeholder="Apartment no. etc." class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn_outlined_primary mb-3">Choose On Map</button>
+                    <button type="submit" class="btn_primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- deliver_modal -->
+
+    <!-- language_modal -->
+    <div class="modal fade language_modal" id="language_modal" tabindex="-1" aria-labelledby="language_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between border-bottom-0">
+                    <span></span>
+                    <h1 class="modal-title fs_18" id="language_modalLabel">Select Language</h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="language_list">العربية</button>
+                    <button type="button" class="language_list">Türkçe</button>
+                    <button type="button" class="language_list">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- language_modal -->
+
+    <!-- info_modal -->
+    <div class="modal fade info_modal" id="info_modal" tabindex="-1" aria-labelledby="info_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between border-bottom-0">
+                    <span></span>
+                    <h1 class="modal-title fs_18" id="info_modalLabel">Info</h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="border-bottom py-3">
+                        <p class="fs_18 fw-bold">FineDine Cafe</p>
+                        <p> Stay Safe</p>
+                        <p class="fs_18 fw-bold">Address</p>
+                        <p class="mb-0">2035 Sunset Lake RoadSuite B2 Newark Delaware USA 19702</p>
+                    </div>
+                    <div class="border-bottom py-3">
+                        <p class="fs_18 fw-bold">Need Help?</p>
+                        <div class="d-flex">
+                            <p class="mb-0">Call us on</p><a href="tel:+11111111"
+                                class="text-dark text-decoration-underline ms-2">+11111111</a>
+                        </div>
+                    </div>
+
+                    <div class="border-bottom py-3">
+                        <p class="fs_18 fw-bold">Opening Hours for Delivery</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Monday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Tuesday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Wednesday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Thursday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Friday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Saturday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Sunday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                    </div>
+
+                    <div class="border-bottom py-3">
+                        <p class="fs_18 fw-bold">Opening Hours for Pickup</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Monday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Tuesday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Wednesday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Thursday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Friday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Saturday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Sunday</p>
+                            <p>00:00 - 23:59</p>
+                        </div>
+                    </div>
+
+                    <div class="py-3">
+                        <p class="fs_18 fw-bold">Ordering Specifics</p>
+                        <div class="flex flex-col space-y-2">
+                            <p class=" flex text-base font-semibold">Delivery</p>
+                            <ul class="flex flex-col list-disc pl-4 marker:text-primary">
+                                <li>
+                                    <p class="text-base">Delivers in 45 minutes</p>
+                                </li>
+                                <li>
+                                    <p class="text-base"><span>$10</span> minimum order</p>
+                                </li>
+                                <li>
+                                    <p class="text-base"><span>$6</span> delivery fee</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <p class=" flex text-base font-semibold">Pick Up</p>
+                            <ul class="flex flex-col list-disc pl-4 marker:text-primary">
+                                <li>
+                                    <p class="text-base">Delivers in 30 minutes</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- info_modal -->
+
+    <!-- bootstrap js -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom / global js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

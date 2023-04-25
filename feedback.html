@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAFE :: FEEDBACK</title>
+    <title>XYZ CAFE :: FEEDBACK</title>
     <!-- fontawesome cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
@@ -20,8 +20,8 @@
     <main class="feedback_page" id="feedback_page">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative">
-                    <div class="py-3 text-center">
+                <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative px-0">
+                    <div class="p-3 text-center">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div class="flex_1_1_0">
                                 <a href="./index.html" class="back_navigation rounded shadow flex_center">
@@ -34,6 +34,22 @@
                         <form action="#">
                             <div class="form-group mb-3">
                                 <label class="form-label d-block">Service Efficiency</label>
+                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check face_check" name="face-feedback" id="face-feedback1"
+                                        autocomplete="off">
+                                    <label class="face_radion_btn" for="face-feedback1"> <i class="fa-solid fa-face-smile face_emoji"></i></label>
+                                   
+
+                                    <input type="radio" class="btn-check face_check" name="face-feedback" id="face-feedback2"
+                                        autocomplete="off">
+                                    <label class="face_radion_btn mx-3" for="face-feedback2"><i class="fa-solid fa-face-meh face_emoji"></i></label>
+                                    
+
+                                    <input type="radio" class="btn-check face_check" name="face-feedback" id="face-feedback3"
+                                        autocomplete="off">
+                                    <label class="face_radion_btn" for="face-feedback3"><i class="fa-solid fa-face-frown face_emoji"></i></label>
+                                    
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label d-block">Cleanliness</label>
@@ -78,14 +94,13 @@
                             <div class="form-group mb-3">
                                 <label class="form-label d-block">Would you like to visit again?</label>
                                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
-                                        autocomplete="off" checked>
-                                    <label class="btn btn-outline-primary rounded-pill px-4 me-3"
-                                        for="btnradio1">Yes</label>
-
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
+                                    <input type="radio" class="btn-check" name="likeWeb" id="likeWeb1"
                                         autocomplete="off">
-                                    <label class="btn btn-outline-primary rounded-pill px-4" for="btnradio3">No</label>
+                                    <label class="like_radio_btn rounded-pill px-4 me-3" for="likeWeb1">Yes</label>
+
+                                    <input type="radio" class="btn-check" name="likeWeb" id="likeWeb2"
+                                        autocomplete="off">
+                                    <label class="like_radio_btn rounded-pill px-4" for="likeWeb2">No</label>
                                 </div>
                             </div>
                             <div class="form-group mb-3">
@@ -108,7 +123,7 @@
                     <div class="text-center main">
                         <img src="./assets/images/logo.avif" alt="logo" class="logo mb-3">
                         <div class="primary_divider mb-3"></div>
-                        <h3>Name Cafe</h3>
+                        <h3>XYZ Cafe</h3>
                     </div>
                 </div>
             </div>

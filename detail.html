@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative px-0">
                     <div class="banner">
-                        <a href="#" class="back_navigate flex_center">
+                        <a href="./mainMenu.html" class="back_navigate flex_center">
                             <i class="fa-solid fa-arrow-left-long"></i>
                         </a>
                         <div class="d-flex justify-content-between bottom_detail">
@@ -30,15 +30,53 @@
                                 <i class="fa-regular fa-clock"></i>
                                 <span>5 min</span>
                             </div>
-                            <div class="rounded-pill time">
-                                <i class="fa-regular fa-clock"></i>
-                                <span>5 min</span>
+                            <div class="rounded-pill info">
+                                <span>Nutrition Info</span>
+                                <i class="fa-solid fa-angle-right"></i>
                             </div>
                         </div>
                         <img src="./assets/images/detail_banner.avif" alt="banner" class="img-fluid w-100">
                     </div>
-                    <div class="prodcut_detail_container">
-
+                    <div class="prodcut_detail_container p-4">
+                        <h5 class="title">Gazpacho
+                            <img src="./assets/images/icons/new.png" title="New" alt="new" class="icons">
+                            <img src="./assets/images/icons/star.avif" title="Signature Dish" alt="star" class="icons">
+                        </h5>
+                        <p><em>Rich gazpacho with herbs and spices</em></p>
+                        <div class="d-flex mb-2">
+                            <img src="./assets/images/icons/a.png" title="icons" alt="icons" class="icons">
+                            <img src="./assets/images/icons/b.png" title="icons" alt="icons" class="icons">
+                            <img src="./assets/images/icons/c.png" title="icons" alt="icons" class="icons">
+                            <img src="./assets/images/icons/d.png" title="icons" alt="icons" class="icons">
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Medium portion (100 Cal)</span>
+                            <span class="text_primary">$13</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Medium portion (100 Cal)</span>
+                            <span class="text_primary">$13</span>
+                        </div>
+                        <div class="card card-body rounded">
+                            <button class="add_notes_btn mb-2" data-bs-toggle="modal" data-bs-target="#add_notes">
+                                <span class="text_dark">Notes</span>
+                                <span class="text_primary">Add note</span>
+                            </button>
+                            <!-- app.js create div -->
+                            <!-- note_display -->
+                            <div id="note_display"></div>
+                            <!-- note_display -->
+                        </div>
+                        <div class="footer add_to_cart">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <button class="less_btn">-</button>
+                                    <span class="fw-bold mx-3">1</span>
+                                    <button class="add_btn">+</button>
+                                </div>
+                                <button class="btn_primary w-auto m-0 text-center py-0">Add to Cart <br> <span class="price">($12)</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
@@ -51,6 +89,32 @@
             </div>
         </div>
     </main>
+
+    <!-- add_notes -->
+    <div class="modal fade add_notes" id="add_notes" tabindex="-1" aria-labelledby="add_notesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between border-bottom-0">
+                    <span></span>
+                    <h1 class="modal-title fs_18" id="add_notesLabel">Add note</h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form onsubmit="addNote(event)">
+                    <div class="modal-body">
+                        <div class="form-group mb-2">
+                            <textarea id="addNoteText" rows="4" class="form-control"
+                                placeholder="Please, add extra services"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn_primary w-100 text-center fs_14"
+                            data-bs-dismiss="modal">confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- add_notes -->
 
     <!-- bootstrap js -->
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

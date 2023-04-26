@@ -136,6 +136,7 @@ a {
     min-height: 100vh;
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -309,9 +310,13 @@ a {
 .main_menuPage .tab_items.active {
     background: none;
 }
-
+.main_menuPage .sticky_content{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
 .main_menuPage .menu_nav {
-    overflow-x: auto;
+    overflow-x: scroll !important;
     -ms-overflow-style: none;
     /* IE and Edge */
 }
@@ -362,8 +367,51 @@ a {
     border-color: transparent var(--color-primary) var(--color-primary) transparent;
     border-bottom-right-radius: 4px;
 }
-
+.main_courses_accordion .accordion-button:not(.collapsed){
+    background-color: #fff;
+    color: #333;
+}
+.main_courses_accordion .accordion-button:focus{
+    box-shadow: none;
+}
 /* main menu page */
+
+/* detail page */
+.detail_page .banner{
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+.detail_page .back_navigate{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: var(--color-dark);
+    border-radius: 50px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+.detail_page .bottom_detail{
+    position: absolute;
+    bottom: 28px;
+    left: 14px;
+    right: 14px;
+}
+.detail_page .time{
+    background: rgba(255,255,255,0.8);
+    padding: 4px 10px;
+    font-size: 14px;
+}
+.detail_page .prodcut_detail_container{
+    background-color: #fff;
+    min-height: 70vh;
+    margin-top: -20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+}
+/* detail page */
 
 /* Media Query */
 @media(max-width:991px) {

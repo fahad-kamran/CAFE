@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative px-0">
                     <!-- menu side bar -->
-                    <div class="offcanvas offcanvas-end position-absolute" data-bs-backdrop="false" tabindex="-1"
+                    <div class="offcanvas offcanvas-end position-absolute w-100" data-bs-backdrop="false" tabindex="-1"
                         id="menuOffCanvas" aria-labelledby="menuOffCanvasLabel">
                         <div class="offcanvas-header">
                             <span></span>
@@ -56,9 +56,8 @@
                         <h4 class="text_primary">Main Menu</h4>
                         <p class="fs_18 mb-2">All your favorites available for delivery & pick-up!</p>
                         <p class="text_light">5% VAT INCLUDED</p>
-                        <div class="py-3">
-                            <ul class="menu_nav nav nav-pills mb-3 flex-nowrap" id="pills-tab"
-                                role="tablist">
+                        <div class="py-2 sticky_content">
+                            <ul class="menu_nav nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
                                 <li class="nav-item me-3" role="presentation">
                                     <a href="#" class="tab_items nav-link p-0 active" id="starter-tab"
                                         data-bs-toggle="pill" data-bs-target="#starter" type="button" role="tab"
@@ -78,9 +77,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item me-3" role="presentation">
-                                    <a href="#" class="tab_items nav-link p-0" id="main-course-tab"
-                                        data-bs-toggle="pill" data-bs-target="#main-course" type="button" role="tab"
-                                        aria-controls="main-course" aria-selected="false">
+                                    <a href="#" class="tab_items nav-link p-0" id="maincourse-tab" data-bs-toggle="pill"
+                                        data-bs-target="#maincourse" type="button" role="tab" aria-controls="maincourse"
+                                        aria-selected="false">
                                         <img src="./assets/images/menu/main-courses.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Main Course</h5>
@@ -113,7 +112,7 @@
                                         <h5 class="text_primary fs_18">Pizza</h5>
                                     </a>
                                 </li>
-                                <li class="nav-item me-3" role="presentation">
+                                <li class="nav-item" role="presentation">
                                     <a href="#" class="tab_items nav-link p-0" id="desserts-tab" data-bs-toggle="pill"
                                         data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts"
                                         aria-selected="false">
@@ -128,6 +127,7 @@
                             <img src="./assets/images/banner.jpg" alt="banner" class="img-fluid rounded">
                         </div>
                         <div class="tab-content" id="pills-tabContent">
+                            <!-- starter list -->
                             <div class="tab-pane fade show active" id="starter" role="tabpanel"
                                 aria-labelledby="starter-tab" tabindex="0">
                                 <h5 class="mb-1">Starters</h5>
@@ -135,7 +135,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -156,16 +156,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -186,13 +186,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
+                            <!-- salads list -->
                             <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab"
                                 tabindex="0">
                                 <h5 class="mb-1">Salads</h5>
@@ -200,7 +201,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -221,16 +222,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -251,78 +252,85 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="tab-pane fade" id="main-course" role="tabpanel"
-                                aria-labelledby="main-course-tab" tabindex="0">
+                            <!-- maincourse list -->
+                            <div class="tab-pane fade" id="maincourse" role="tabpanel" aria-labelledby="maincourse-tab"
+                                tabindex="0">
                                 <h5 class="mb-1">Main Courses</h5>
                                 <p class="fs_14">From the best chefs in the world</p>
-                                <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
-                                    <button class="add_btn">+</button>
-                                    <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
-                                            <div class="product_detail text-start">
-                                                <h4 class="product_title">Beef Noodle Soup</h4>
-                                                <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
-                                                    customers' favorites.</p>
-                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
-                                                <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
-                                                        class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
-                                                </div>
+                                <!-- main course collapse -->
+                                <div class="accordion accordion-flush main_courses_accordion"
+                                    id="accordionFlushExample">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#wraps-collapse"
+                                                aria-expanded="false" aria-controls="wraps-collapse">
+                                                Wraps
+                                            </button>
+                                        </h2>
+                                        <div id="wraps-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>list wraps items</p>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
-                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
-                                    <button class="add_btn">+</button>
-                                    <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
-                                            <div class="product_detail text-start">
-                                                <h4 class="product_title">Beef Noodle Soup</h4>
-                                                <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
-                                                    customers' favorites.</p>
-                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
-                                                <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
-                                                        class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
-                                                </div>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#chicken-collapse"
+                                                aria-expanded="false" aria-controls="chicken-collapse">
+                                                Chicken
+                                            </button>
+                                        </h2>
+                                        <div id="chicken-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>list chicken items</p>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                    </div>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#burger-collapse"
+                                                aria-expanded="false" aria-controls="burger-collapse">
+                                                Burgers
+                                            </button>
+                                        </h2>
+                                        <div id="burger-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>list burger items</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#redmeats-collapse"
+                                                aria-expanded="false" aria-controls="redmeats-collapse">
+                                                Red Meats
+                                            </button>
+                                        </h2>
+                                        <div id="redmeats-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>list Red Meats items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- main course collapse -->
                             </div>
+                            <!-- seafoods list -->
                             <div class="tab-pane fade" id="sea-foods" role="tabpanel" aria-labelledby="sea-foods-tab"
                                 tabindex="0">
                                 <h5 class="mb-1">Seafood</h5>
@@ -330,7 +338,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -351,16 +359,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -381,13 +389,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
+                            <!-- pasta list -->
                             <div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="pasta-tab"
                                 tabindex="0">
                                 <h5 class="mb-1">Pasta</h5>
@@ -395,7 +404,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -416,16 +425,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -446,13 +455,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
+                            <!-- pizza list -->
                             <div class="tab-pane fade" id="pizza" role="tabpanel" aria-labelledby="pizza-tab"
                                 tabindex="0">
                                 <h5 class="mb-1">Pizza</h5>
@@ -460,7 +470,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -481,16 +491,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -511,13 +521,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
+                            <!-- desserts list -->
                             <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab"
                                 tabindex="0">
                                 <h5 class="mb-1">Desserts</h5>
@@ -525,7 +536,7 @@
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -546,16 +557,16 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                                 <a href="#" class="card card-body shadow overflow-hidden product_card mb-3">
                                     <button class="add_btn">+</button>
                                     <div class="row m-0">
-                                        <div class="col-7 ps-0 pe-2">
+                                        <div class="col-9 ps-0 pe-2">
                                             <div class="product_detail text-start">
                                                 <h4 class="product_title">Beef Noodle Soup</h4>
                                                 <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
@@ -576,18 +587,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-5 p-0">
+                                        <div class="col-3 p-0 mb-2">
                                             <img src="./assets/images/menu/starter1.avif" alt="starter"
-                                                class="img-fluid rounded w-100">
+                                                class="img-fluid rounded">
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                   <p class="text-center">
-                    <a href="#" class="text_primary">Powered by XYZ cafe</a>
-                   </p>
+                    <p class="text-center">
+                        <a href="#" class="text_primary">Powered by XYZ cafe</a>
+                    </p>
                 </div>
                 <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
                     <div class="text-center main">

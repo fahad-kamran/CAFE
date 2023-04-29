@@ -14,7 +14,8 @@
         let lang = localStorage.getItem('setAppLanguage');
         if (lang == null) {
             // defaul set english
-            localStorage.setItem('setAppLanguage', 'en');
+            lang = 'en';
+            localStorage.setItem('setAppLanguage', lang);
         }
         window.location.href = `./lang/${lang}`;
     </script>

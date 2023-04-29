@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ CAFE :: MAIN MENU</title>
+    <title>CAFE :: MAIN MENU</title>
     <!-- fontawesome cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
         integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
         crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
     <!-- customs / global css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- left to right css -->
+    <link rel="stylesheet" href="../../assets/css/ltr.css">
 </head>
 
 <body>
@@ -41,28 +43,30 @@
                         </div>
                     </div>
                     <!-- menu side bar -->
-                    <div class="p-3 text-center">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="py-3 text-center">
+                        <div class="d-flex justify-content-between align-items-center mb-3 px-3">
                             <a href="./index.html" class="back_navigation rounded shadow flex_center">
                                 <i class="fa-solid fa-angle-left"></i>
                             </a>
-                            <img src="./assets/images/logo.avif" alt="logo" class="logo_small">
+                            <img src="../../assets/images/logo.avif" alt="logo" class="logo_small">
                             <button class="back_navigation rounded shadow flex_center" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#menuOffCanvas"
                                 aria-controls="menuOffCanvas">
                                 <i class="fa-solid fa-bars"></i>
                             </button>
                         </div>
-                        <h4 class="text_primary">Main Menu</h4>
-                        <p class="fs_18 mb-2">All your favorites available for delivery & pick-up!</p>
-                        <p class="text_light">5% VAT INCLUDED</p>
-                        <div class="py-2 sticky_content">
+                        <div class="px-3">
+                            <h4 class="text_primary">Main Menu</h4>
+                            <p class="fs_18 mb-2">All your favorites available for delivery & pick-up!</p>
+                            <p class="text_light">5% VAT INCLUDED</p>
+                        </div>
+                        <div class="py-2 px-3 sticky_content">
                             <ul class="menu_nav nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
                                 <li class="nav-item me-3" role="presentation">
                                     <a href="#" class="tab_items nav-link p-0 active" id="starter-tab"
                                         data-bs-toggle="pill" data-bs-target="#starter" type="button" role="tab"
                                         aria-controls="starter" aria-selected="true">
-                                        <img src="./assets/images/menu/starter.avif" alt="starter"
+                                        <img src="../../assets/images/menu/starter.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Starters</h5>
                                     </a>
@@ -71,7 +75,7 @@
                                     <a href="#" class="tab_items nav-link p-0" id="salads-tab" data-bs-toggle="pill"
                                         data-bs-target="#salads" type="button" role="tab" aria-controls="salads"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/salads.avif" alt="starter"
+                                        <img src="../../assets/images/menu/salads.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Salads</h5>
                                     </a>
@@ -80,7 +84,7 @@
                                     <a href="#" class="tab_items nav-link p-0" id="maincourse-tab" data-bs-toggle="pill"
                                         data-bs-target="#maincourse" type="button" role="tab" aria-controls="maincourse"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/main-courses.avif" alt="starter"
+                                        <img src="../../assets/images/menu/main-courses.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Main Course</h5>
                                     </a>
@@ -89,7 +93,7 @@
                                     <a href="#" class="tab_items nav-link p-0" id="sea-foods-tab" data-bs-toggle="pill"
                                         data-bs-target="#sea-foods" type="button" role="tab" aria-controls="sea-foods"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/seafoods.avif" alt="starter"
+                                        <img src="../../assets/images/menu/seafoods.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Seafood</h5>
                                     </a>
@@ -98,7 +102,7 @@
                                     <a href="#" class="tab_items nav-link p-0" id="pasta-tab" data-bs-toggle="pill"
                                         data-bs-target="#pasta" type="button" role="tab" aria-controls="pasta"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/pasta.avif" alt="starter"
+                                        <img src="../../assets/images/menu/pasta.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Pasta</h5>
                                     </a>
@@ -107,7 +111,7 @@
                                     <a href="#" class="tab_items nav-link p-0" id="pizza-tab" data-bs-toggle="pill"
                                         data-bs-target="#pizza" type="button" role="tab" aria-controls="pizza"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/pizza.avif" alt="starter"
+                                        <img src="../../assets/images/menu/pizza.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Pizza</h5>
                                     </a>
@@ -116,17 +120,17 @@
                                     <a href="#" class="tab_items nav-link p-0" id="desserts-tab" data-bs-toggle="pill"
                                         data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts"
                                         aria-selected="false">
-                                        <img src="./assets/images/menu/desserts.avif" alt="starter"
+                                        <img src="../../assets/images/menu/desserts.avif" alt="starter"
                                             class="img-fluid rounded mb-2">
                                         <h5 class="text_primary fs_18">Desserts</h5>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="banner mb-2">
-                            <img src="./assets/images/banner.jpg" alt="banner" class="img-fluid rounded">
+                        <div class="banner mb-2 px-3">
+                            <img src="../../assets/images/banner.jpg" alt="banner" class="img-fluid rounded">
                         </div>
-                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-content px-3" id="pills-tabContent">
                             <!-- starter list -->
                             <div class="tab-pane fade show active" id="starter" role="tabpanel"
                                 aria-labelledby="starter-tab" tabindex="0">
@@ -142,22 +146,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -172,22 +185,70 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-start">
+                                                <h4 class="product_title">Beef Noodle Soup</h4>
+                                                <p class="mb-1 fs_15">Warm and spicy! Our beef noodle soup is one of
+                                                    customers' favorites.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -208,22 +269,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -238,22 +308,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -345,22 +424,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -375,22 +463,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -411,22 +508,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -441,22 +547,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -477,22 +592,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -507,22 +631,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -543,22 +676,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -573,22 +715,31 @@
                                                     customers' favorites.</p>
                                                 <p class="product_price text_primary fs_14 mb-2">$ 12</p>
                                                 <div class="d-flex flex-wrap align-items-center">
-                                                    <img src="./assets/images/icons/new.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/star.avif" alt="icons"
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
                                                         class="icons">
-                                                    <img src="./assets/images/icons/a.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/b.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/c.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/d.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/e.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/f.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/g.png" alt="icons" class="icons">
-                                                    <img src="./assets/images/icons/h.png" alt="icons" class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-3 p-0 mb-2">
-                                            <img src="./assets/images/menu/starter1.avif" alt="starter"
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
                                                 class="img-fluid rounded">
                                         </div>
                                     </div>
@@ -597,14 +748,14 @@
                         </div>
                     </div>
                     <p class="text-center">
-                        <a href="#" class="text_primary">Powered by XYZ cafe</a>
+                        <a href="#" class="text_primary">Powered by Cafe</a>
                     </p>
                 </div>
                 <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
                     <div class="text-center main">
-                        <img src="./assets/images/logo.avif" alt="logo" class="logo mb-3">
+                        <img src="../../assets/images/logo.avif" alt="logo" class="logo mb-3">
                         <div class="primary_divider mb-3"></div>
-                        <h3>XYZ Cafe</h3>
+                        <h3>Cafe</h3>
                     </div>
                 </div>
             </div>
@@ -612,9 +763,10 @@
     </main>
 
     <!-- bootstrap js -->
-    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- custom / global js -->
-    <script src="./assets/js/app.js"></script>
+    <script src="../../assets/js/app.js"></script>
+
 </body>
 
 </html>

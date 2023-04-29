@@ -1,0 +1,16 @@
+.left_bar {
+    border-left: 1px solid #dee2e6;
+}
+
+.main_menuPage .product_card .add_btn {
+    left: 0;
+    border-color: transparent transparent var(--color-primary) var(--color-primary);
+    border-bottom-right-radius: 4px;
+}
+.main_menuPage #maincourse .accordion-button::after{
+    margin-right: auto;
+    margin-left: unset;
+}
+.detail_page .banner .back_navigate {
+    right: 14px;
+}

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE :: MAIN MENU</title>
+    <!-- fontawesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- customs / global css -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- right to left css -->
+    <link rel="stylesheet" href="../../assets/css/rtl.css">
+</head>
+
+<body>
+    <main class="main_menuPage" id="main_menuPage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative px-0">
+                    <!-- menu side bar -->
+                    <div class="offcanvas offcanvas-end position-absolute w-100" data-bs-backdrop="false" tabindex="-1"
+                        id="menuOffCanvas" aria-labelledby="menuOffCanvasLabel">
+                        <div class="offcanvas-header">
+                            <span></span>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <button
+                                class="all_unset border-bottom d-block w-100 text-center py-3 fs_24 fw-500 text-dark">لغة</button>
+                            <a href="./feedback.html"
+                                class="border-bottom d-block text-center py-3 fs_24 fw-500 text-dark">إعطاء ردود
+                                الفعل</a>
+                            <a href="./order-status.html"
+                                class="border-bottom d-block text-center py-3 fs_24 fw-500 text-dark">حالة الطلب</a>
+                            <a class="btn_outlined_primary call_restaurant" href="tel:+921111111"><i
+                                    class="fa-solid fa-phone me-2"></i> اتصل بالمطعم</a>
+                        </div>
+                    </div>
+                    <!-- menu side bar -->
+                    <div class="py-3 text-center">
+                        <div class="d-flex justify-content-between align-items-center mb-3 px-3">
+                            <a href="./index.html" class="back_navigation rounded shadow flex_center">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                            <img src="../../assets/images/logo.avif" alt="logo" class="logo_small">
+                            <button class="back_navigation rounded shadow flex_center" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#menuOffCanvas"
+                                aria-controls="menuOffCanvas">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="px-3">
+                            <h4 class="text_primary">القائمة الرئيسية</h4>
+                            <p class="fs_18 mb-2">جميع مفضلاتك متاحة للتسليم والاستلام !</p>
+                            <p class="text_light">متضمن 5٪ ضريبة القيمة المضافة</p>
+                        </div>
+                        <div class="py-2 px-3 sticky_content">
+                            <ul class="menu_nav nav nav-pills mb-3 flex-nowrap" id="pills-tab" role="tablist">
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0 active" id="starter-tab"
+                                        data-bs-toggle="pill" data-bs-target="#starter" type="button" role="tab"
+                                        aria-controls="starter" aria-selected="true">
+                                        <img src="../../assets/images/menu/starter.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">المقبلات</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="salads-tab" data-bs-toggle="pill"
+                                        data-bs-target="#salads" type="button" role="tab" aria-controls="salads"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/salads.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">سلطة</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="maincourse-tab" data-bs-toggle="pill"
+                                        data-bs-target="#maincourse" type="button" role="tab" aria-controls="maincourse"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/main-courses.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">الدورات الرئيسة</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="sea-foods-tab" data-bs-toggle="pill"
+                                        data-bs-target="#sea-foods" type="button" role="tab" aria-controls="sea-foods"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/seafoods.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">مأكولات بحرية</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="pasta-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pasta" type="button" role="tab" aria-controls="pasta"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/pasta.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">معكرونة</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item ms-3" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="pizza-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pizza" type="button" role="tab" aria-controls="pizza"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/pizza.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">بيتزا</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a href="#" class="tab_items nav-link p-0" id="desserts-tab" data-bs-toggle="pill"
+                                        data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts"
+                                        aria-selected="false">
+                                        <img src="../../assets/images/menu/desserts.avif" alt="starter"
+                                            class="img-fluid rounded mb-2">
+                                        <h5 class="text_primary fs_18">حلويات</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="banner mb-2 px-3">
+                            <img src="../../assets/images/banner.jpg" alt="banner" class="img-fluid rounded">
+                        </div>
+                        <div class="tab-content px-3" id="pills-tabContent">
+                            <!-- starter list -->
+                            <div class="tab-pane fade show active" id="starter" role="tabpanel"
+                                aria-labelledby="starter-tab" tabindex="0">
+                                <h5 class="mb-1">المقبلات</h5>
+                                <p class="fs_14">الحساء والتاباس</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- salads list -->
+                            <div class="tab-pane fade" id="salads" role="tabpanel" aria-labelledby="salads-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">سلطة</h5>
+                                <p class="fs_14">المكونات الطازجة والعضوية</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- maincourse list -->
+                            <div class="tab-pane fade" id="maincourse" role="tabpanel" aria-labelledby="maincourse-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">الدورات الرئيسة</h5>
+                                <p class="fs_14">من أفضل الطهاة في العالم</p>
+                                <!-- main course collapse -->
+                                <div class="accordion accordion-flush main_courses_accordion"
+                                    id="accordionFlushExample">
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#wraps-collapse"
+                                                aria-expanded="false" aria-controls="wraps-collapse">
+                                                يلف
+                                            </button>
+                                        </h2>
+                                        <div id="wraps-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>قائمة يلتف العناصر</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#chicken-collapse"
+                                                aria-expanded="false" aria-controls="chicken-collapse">
+                                                فرخة
+                                            </button>
+                                        </h2>
+                                        <div id="chicken-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>قائمة عناصر الدجاج</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#burger-collapse"
+                                                aria-expanded="false" aria-controls="burger-collapse">
+                                                برجر
+                                            </button>
+                                        </h2>
+                                        <div id="burger-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>قائمة عناصر برجر</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header mb-2 shadow">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#redmeats-collapse"
+                                                aria-expanded="false" aria-controls="redmeats-collapse">
+                                                اللحوم الحمراء
+                                            </button>
+                                        </h2>
+                                        <div id="redmeats-collapse" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <p>قائمة أصناف اللحوم الحمراء</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- main course collapse -->
+                            </div>
+                            <!-- seafoods list -->
+                            <div class="tab-pane fade" id="sea-foods" role="tabpanel" aria-labelledby="sea-foods-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">مأكولات بحرية</h5>
+                                <p class="fs_14">يتم توصيل جميع المكونات الطازجة يوميًا</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- pasta list -->
+                            <div class="tab-pane fade" id="pasta" role="tabpanel" aria-labelledby="pasta-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">معكرونة</h5>
+                                <p class="fs_14">الباستا المصنوعة يدويا</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- pizza list -->
+                            <div class="tab-pane fade" id="pizza" role="tabpanel" aria-labelledby="pizza-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">بيتزا</h5>
+                                <p class="fs_14">♥ لذيذ ومقرمش! ♥</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- desserts list -->
+                            <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab"
+                                tabindex="0">
+                                <h5 class="mb-1">حلويات</h5>
+                                <p class="fs_14">حلويات يومية مصنوعة من مكونات طازجة</p>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./detail.html" class="card card-body shadow overflow-hidden product_card mb-3">
+                                    <button class="add_btn">+</button>
+                                    <div class="row m-0">
+                                        <div class="col-9 ps-0 pe-2">
+                                            <div class="product_detail text-end">
+                                                <h4 class="product_title">حساء الشعيرية بلحم البقر</h4>
+                                                <p class="mb-1 fs_15">حار وحار! لدينا حساء الشعيرية بلحم البقر
+                                                     المفضلة للعملاء.</p>
+                                                <p class="product_price text_primary fs_14 mb-2">$ 12</p>
+                                                <div class="d-flex flex-wrap align-items-center">
+                                                    <img src="../../assets/images/icons/new.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/star.avif" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/a.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/b.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/c.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/d.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/e.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/f.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/g.png" alt="icons"
+                                                        class="icons">
+                                                    <img src="../../assets/images/icons/h.png" alt="icons"
+                                                        class="icons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 p-0 mb-2">
+                                            <img src="../../assets/images/menu/starter1.avif" alt="starter"
+                                                class="img-fluid rounded">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        <a href="#" class="text_primary">مدعوم من مقهى</a>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
+                    <div class="text-center main">
+                        <img src="../../assets/images/logo.avif" alt="logo" class="logo mb-3">
+                        <div class="primary_divider mb-3"></div>
+                        <h3>كافيه</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom / global js -->
+    <script src="../../assets/js/app.js"></script>
+
+</body>
+
+</html>

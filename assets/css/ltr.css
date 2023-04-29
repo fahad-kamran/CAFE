@@ -1,0 +1,13 @@
+.left_bar {
+    border-right: 1px solid #dee2e6;
+}
+
+.main_menuPage .product_card .add_btn {
+    right: 0;
+    border-color: transparent var(--color-primary) var(--color-primary) transparent;
+    border-bottom-right-radius: 4px;
+}
+
+.detail_page .banner .back_navigate {
+    left: 14px;
+}

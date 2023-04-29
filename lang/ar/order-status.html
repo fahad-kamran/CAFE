@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE :: ORDER STATUS</title>
+    <!-- fontawesome cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- customs / global css -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- right to left css -->
+    <link rel="stylesheet" href="../../assets/css/rtl.css">
+</head>
+
+<body>
+    <main class="order_status" id="order_status">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 m-auto col-lg-4 border-end left_bar position-relative">
+                    <div class="py-3 text-center">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="flex_1_1_0">
+                                <a href="./index.html" class="back_navigation rounded shadow flex_center">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                            <h4 class="flex_2_1_0 fs_20">حالة الطلب</h4>
+                            <span class="flex_1_1_0"></span>
+                        </div>
+                        <p>يمكنك العثور على رقم طلبك في البريد الإلكتروني الذي أرسلناه إليك.</p>
+                        <form action="#">
+                            <div
+                                class="search_order p-2 rounded border d-flex align-items-center justify-content-between">
+                                <div class="form-group text-start w-100 me-2">
+                                    <label class="form-label fs_14 fw-bold text-end w-100">رقم الأمر</label>
+                                    <input type="text" class="w-100 text-end">
+                                </div>
+                                <button type="submit" class="all_unset"><i
+                                        class="fa-solid fa-magnifying-glass fs_24"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <a class="btn_outlined_primary call_restaurant" href="tel:+921111111"><i
+                            class="fa-solid fa-phone me-2"></i> اتصل بالمطعم</a>
+                </div>
+                <div class="col-12 col-lg-8 flex_center h-100 desktop_content">
+                    <div class="text-center main">
+                        <img src="../../assets/images/logo.avif" alt="logo" class="logo mb-3">
+                        <div class="primary_divider mb-3"></div>
+                        <h3>كافيه</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- bootstrap js -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom / global js -->
+    <script src="../../assets/js/app.js"></script>
+
+</body>
+
+</html>

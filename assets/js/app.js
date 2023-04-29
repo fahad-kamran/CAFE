@@ -8,3 +8,12 @@ const addNote = (event) => {
     </div>
 `;
 }
+
+// change language function
+const changeLanguage = (currentLang) => {
+    let prevLang = localStorage.getItem('setAppLanguage');
+    localStorage.setItem('setAppLanguage', currentLang);
+
+    let url = window.location.toString();
+    window.location = url.replace(`/${prevLang}/`, `/${currentLang}/`);
+}
